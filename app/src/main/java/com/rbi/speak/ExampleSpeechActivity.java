@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class ExampleSpeechActivity extends Activity implements View.OnClickListener, SpeechListener {
 
-    private TextView infoText;
+    protected TextView infoText;
     private Button speakButton;
 
     private SpeechRecognitionAdapter sl;
