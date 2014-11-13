@@ -21,5 +21,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    
+    // NOTE: check for version at: 
+    // http://search.maven.org/#search%7Cga%7C1%7Ccom.mcxiaoke.volley
     compile 'com.mcxiaoke.volley:library:1.0.8'
 }
