@@ -74,7 +74,8 @@ public class SpeechRecognitionAdapter implements RecognitionListener {
 
     private void restartRecognition(boolean wasError){
 
-        if(--currentAttempt ==0){
+        // fix restart issue
+        if(--currentAttempt <100){
             stopRecognition();
             return;
         }

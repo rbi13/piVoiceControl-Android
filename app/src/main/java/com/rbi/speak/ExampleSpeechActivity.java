@@ -45,7 +45,7 @@ public class ExampleSpeechActivity extends Activity implements View.OnClickListe
     public void onClick(View v) {
 
         if(!sl.isListening()){
-            sl.startRecognition(3); // -1 for continuous
+            sl.startRecognition(1); // -1 for continuous
         }
         else{
             sl.stopRecognition();
