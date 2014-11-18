@@ -77,7 +77,11 @@ public class NetworkSpeechActivity extends ExampleSpeechActivity implements Voll
     // Volley Listener
     @Override
     public void onErrorResponse(VolleyError error) {
-        Logger.log(error.getMessage().toString());
+        try {
+            Logger.log(error.getMessage().toString());
+        }
+        catch (Exception e){
+        }
     }
 
     @Override
